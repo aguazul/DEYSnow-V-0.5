@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id272998" PGFVersion="0.23" GSCVersion="0.13.33">
+  <attributes>
+    <text id="name">sound control button</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">32</real>
+      <real id="height">32</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">sound_on_button</image>
+    <text id="tags">UI Elements</text>
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id798221" class="PlaySoundAction" enabled="true">
+      <attributes>
+        <text id="name">Play Sound</text>
+        <text id="bundleName">PlaySound.behavior</text>
+        <sound id="soundName">coldstormywind</sound>
+        <boolean id="loop">true</boolean>
+        <boolean id="runToCompletion">true</boolean>
+        <boolean id="positional">false</boolean>
+        <boolean id="dopplerShift">false</boolean>
+        <real id="volume">1</real>
+        <real id="pitch">1</real>
+      </attributes>
+    </behavior>
+    <behavior id="id663190" class="PlayMusicAction" enabled="true">
+      <attributes>
+        <text id="name">Play Music</text>
+        <text id="bundleName">PlayMusic.behavior</text>
+        <music id="musicName">GETTINGCOLD</music>
+        <boolean id="loop">true</boolean>
+      </attributes>
+    </behavior>
+    <behavior id="id865687" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id123490" eventType="touch" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id691823" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id680570" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id714114</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id235924" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.image</text>
+                <text id="RHS">sound_off_button.png</text>
+              </attributes>
+            </behavior>
+            <behavior id="id892708" class="InterpolateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Interpolate</text>
+                <text id="bundleName">Interpolate.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <text id="targetAttribute">game.devices.audio.soundVolume</text>
+                <real id="finalValue">0</real>
+                <real id="duration">1</real>
+                <index id="easing">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id561546" class="InterpolateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Interpolate</text>
+                <text id="bundleName">Interpolate.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <text id="targetAttribute">game.devices.audio.musicVolume</text>
+                <real id="finalValue">0</real>
+                <real id="duration">1</real>
+                <index id="easing">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id768220" class="PauseMusicAction" enabled="true">
+              <attributes>
+                <text id="name">Pause Music</text>
+                <text id="bundleName">PauseMusic.behavior</text>
+              </attributes>
+            </behavior>
+            <behavior id="id442512" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id714114</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior id="id463460" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.image</text>
+                <text id="RHS">sound_on_button.png</text>
+              </attributes>
+            </behavior>
+            <behavior id="id152425" class="PlayMusicAction" enabled="true">
+              <attributes>
+                <text id="name">Play Music</text>
+                <text id="bundleName">PlayMusic.behavior</text>
+                <music id="musicName" />
+                <boolean id="loop">true</boolean>
+              </attributes>
+            </behavior>
+            <behavior id="id620274" class="InterpolateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Interpolate</text>
+                <text id="bundleName">Interpolate.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <text id="targetAttribute">game.devices.audio.soundVolume</text>
+                <real id="finalValue">1</real>
+                <real id="duration">1</real>
+                <index id="easing">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id613579" class="InterpolateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Interpolate</text>
+                <text id="bundleName">Interpolate.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <text id="targetAttribute">game.devices.audio.musicVolume</text>
+                <real id="finalValue">1</real>
+                <real id="duration">1</real>
+                <index id="easing">0</index>
+              </attributes>
+            </behavior>
+            <behavior id="id872495" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id714114</text>
+                <text id="RHS">true</text>
+              </attributes>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+    <behavior id="id162904" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id616046" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.time</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id583207" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id714114</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">0</index>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id950531" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.devices.audio.soundVolume</text>
+            <text id="RHS">0</text>
+          </attributes>
+        </behavior>
+        <behavior id="id221777" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.devices.audio.musicVolume</text>
+            <text id="RHS">0</text>
+          </attributes>
+        </behavior>
+        <behavior id="id683475" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.image</text>
+            <text id="RHS">sound_off_button.png</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

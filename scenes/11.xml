@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.23" GSCVersion="0.13.33" id="id820360">
+  <layers>
+    <layer id="id832073">
+      <actors>
+        <actor id="id389082" prototype="id272998">
+          <attributes>
+            <point id="position">
+              <real id="x">341</real>
+              <real id="y">461</real>
+            </point>
+            <size id="size">
+              <real id="width">32</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id961414" prototype="id662939">
+          <attributes>
+            <point id="position">
+              <real id="x">161</real>
+              <real id="y">241</real>
+            </point>
+            <size id="size">
+              <real id="width">323</real>
+              <real id="height">480</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">level select scene</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id489956" prototype="id101349">
+          <attributes>
+            <point id="position">
+              <real id="x">16.5</real>
+              <real id="y">512.5</real>
+            </point>
+            <size id="size">
+              <real id="width">128</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id225497" prototype="id757597">
+          <attributes>
+            <point id="position">
+              <real id="x">26</real>
+              <real id="y">52</real>
+            </point>
+            <size id="size">
+              <real id="width">46</real>
+              <real id="height">46</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">5</image>
+            <integer id="id916766" name="level">5</integer>
+            <text id="name">select level number</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id502561" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id419609" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id380846" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id916766</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="game.attributes.id549353" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id821174" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id150316" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id502983" eventType="touch" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">0</index>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="touch" conditionType="released">
+                        <attributes />
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id173669" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id389164.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id232595" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id617044.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id350226" class="TimerBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">1</real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior id="id912698" class="ChangeAttributeAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Attribute</text>
+                            <text id="bundleName">ChangeAttribute.behavior</text>
+                            <text id="targetAttribute">game.attributes.id930071</text>
+                            <text id="RHS">
+                              <expression>
+                                <reference keypath="self.attributes.id916766" />
+                              </expression>
+                            </text>
+                          </attributes>
+                        </behavior>
+                        <behavior id="id471850" class="ChangeSceneAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Scene</text>
+                            <text id="bundleName">ChangeScene.behavior</text>
+                            <text id="sceneKey">id692238</text>
+                            <boolean id="enableAdvertisement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id353999" prototype="id757597">
+          <attributes>
+            <point id="position">
+              <real id="x">23</real>
+              <real id="y">114</real>
+            </point>
+            <size id="size">
+              <real id="width">46</real>
+              <real id="height">46</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">4</image>
+            <integer id="id916766" name="level">4</integer>
+            <text id="name">select level number</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id418734" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id239151" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id206304" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id916766</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="game.attributes.id549353" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id982748" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id534078" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id591984" eventType="touch" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">0</index>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="touch" conditionType="released">
+                        <attributes />
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id494840" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id389164.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id681652" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id617044.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id681360" class="TimerBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">1</real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior id="id794360" class="ChangeAttributeAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Attribute</text>
+                            <text id="bundleName">ChangeAttribute.behavior</text>
+                            <text id="targetAttribute">game.attributes.id930071</text>
+                            <text id="RHS">
+                              <expression>
+                                <reference keypath="self.attributes.id916766" />
+                              </expression>
+                            </text>
+                          </attributes>
+                        </behavior>
+                        <behavior id="id827467" class="ChangeSceneAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Scene</text>
+                            <text id="bundleName">ChangeScene.behavior</text>
+                            <text id="sceneKey">id554580</text>
+                            <boolean id="enableAdvertisement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id941494" prototype="id757597">
+          <attributes>
+            <point id="position">
+              <real id="x">27</real>
+              <real id="y">181</real>
+            </point>
+            <size id="size">
+              <real id="width">46</real>
+              <real id="height">46</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">3</image>
+            <integer id="id916766" name="level">3</integer>
+          </attributes>
+          <behaviors>
+            <behavior id="id675457" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id605253" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id446372" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id916766</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="game.attributes.id549353" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id899560" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id817307" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id603585" eventType="touch" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">0</index>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="touch" conditionType="released">
+                        <attributes />
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id533589" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id389164.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id438741" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id617044.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id884254" class="TimerBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">1</real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior id="id806786" class="ChangeAttributeAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Attribute</text>
+                            <text id="bundleName">ChangeAttribute.behavior</text>
+                            <text id="targetAttribute">game.attributes.id930071</text>
+                            <text id="RHS">
+                              <expression>
+                                <reference keypath="self.attributes.id916766" />
+                              </expression>
+                            </text>
+                          </attributes>
+                        </behavior>
+                        <behavior id="id989438" class="ChangeSceneAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Scene</text>
+                            <text id="bundleName">ChangeScene.behavior</text>
+                            <text id="sceneKey">id791360</text>
+                            <boolean id="enableAdvertisement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id105029" prototype="id757597">
+          <attributes>
+            <point id="position">
+              <real id="x">27</real>
+              <real id="y">248</real>
+            </point>
+            <size id="size">
+              <real id="width">48</real>
+              <real id="height">48</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">2</image>
+            <integer id="id916766" name="level">2</integer>
+          </attributes>
+          <behaviors>
+            <behavior id="id525191" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id975817" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id812273" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id916766</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="game.attributes.id549353" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id384013" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id459372" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id176339" eventType="touch" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">0</index>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="touch" conditionType="released">
+                        <attributes />
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id809016" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id389164.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id365693" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id617044.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id356416" class="TimerBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">1</real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior id="id855791" class="ChangeAttributeAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Attribute</text>
+                            <text id="bundleName">ChangeAttribute.behavior</text>
+                            <text id="targetAttribute">game.attributes.id930071</text>
+                            <text id="RHS">
+                              <expression>
+                                <reference keypath="self.attributes.id916766" />
+                              </expression>
+                            </text>
+                          </attributes>
+                        </behavior>
+                        <behavior id="id649045" class="ChangeSceneAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Scene</text>
+                            <text id="bundleName">ChangeScene.behavior</text>
+                            <text id="sceneKey">id784597</text>
+                            <boolean id="enableAdvertisement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id511421" prototype="id757597">
+          <attributes>
+            <point id="position">
+              <real id="x">29.5</real>
+              <real id="y">314.5</real>
+            </point>
+            <size id="size">
+              <real id="width">45</real>
+              <real id="height">45</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id372071" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id809800" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id447668" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id916766</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="game.attributes.id549353" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id355256" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <text id="RHS">1</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id638860" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id725773" eventType="touch" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">0</index>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="touch" conditionType="released">
+                        <attributes />
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id765981" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id389164.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id125059" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">scene.layers.id488382.actors.id617044.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">0.5</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id727824" class="TimerBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">1</real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior id="id993541" class="ChangeAttributeAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Attribute</text>
+                            <text id="bundleName">ChangeAttribute.behavior</text>
+                            <text id="targetAttribute">game.attributes.id930071</text>
+                            <text id="RHS">
+                              <expression>
+                                <reference keypath="self.attributes.id916766" />
+                              </expression>
+                            </text>
+                          </attributes>
+                        </behavior>
+                        <behavior id="id495004" class="ChangeSceneAction" enabled="true">
+                          <attributes>
+                            <text id="name">Change Scene</text>
+                            <text id="bundleName">ChangeScene.behavior</text>
+                            <text id="sceneKey">id661868</text>
+                            <boolean id="enableAdvertisement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id951424" prototype="id210415">
+          <attributes>
+            <point id="position">
+              <real id="x">216</real>
+              <real id="y">388</real>
+            </point>
+            <size id="size">
+              <real id="width">216</real>
+              <real id="height">76</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">0.219607843137255</real>
+              <real id="green">0.368627450980392</real>
+              <real id="blue">0.435294117647059</real>
+              <real id="alpha">1</real>
+            </color>
+            <text id="name">level hiding box</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id528316" prototype="id842027">
+          <attributes>
+            <point id="position">
+              <real id="x">186</real>
+              <real id="y">175</real>
+            </point>
+            <size id="size">
+              <real id="width">229</real>
+              <real id="height">344</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">congrats</image>
+          </attributes>
+          <behaviors />
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id959269" prototype="id118430">
+          <attributes>
+            <point id="position">
+              <real id="x">296</real>
+              <real id="y">391</real>
+            </point>
+            <size id="size">
+              <real id="width">41</real>
+              <real id="height">41</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">level locked Copy 4</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id962900" prototype="id118430">
+          <attributes>
+            <point id="position">
+              <real id="x">242</real>
+              <real id="y">390</real>
+            </point>
+            <size id="size">
+              <real id="width">41</real>
+              <real id="height">41</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">level locked Copy 3</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id491161" prototype="id118430">
+          <attributes>
+            <point id="position">
+              <real id="x">190</real>
+              <real id="y">390</real>
+            </point>
+            <size id="size">
+              <real id="width">41</real>
+              <real id="height">41</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">level locked Copy 2</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id466329" prototype="id118430">
+          <attributes>
+            <point id="position">
+              <real id="x">141</real>
+              <real id="y">389</real>
+            </point>
+            <size id="size">
+              <real id="width">41</real>
+              <real id="height">41</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">level locked Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id522186" prototype="id118430">
+          <attributes>
+            <point id="position">
+              <real id="x">80.5</real>
+              <real id="y">389.5</real>
+            </point>
+            <size id="size">
+              <real id="width">41</real>
+              <real id="height">41</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id489012" prototype="id835873">
+          <attributes>
+            <point id="position">
+              <real id="x">306</real>
+              <real id="y">462.5</real>
+            </point>
+            <size id="size">
+              <real id="width">35</real>
+              <real id="height">35</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">home button</image>
+            <text id="name">home button</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id722715" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id638012" eventType="touch" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="touch" conditionType="released">
+                    <attributes />
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id578900" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">scene.layers.id156294.actors.id375757.attributes.color.alpha</text>
+                    <real id="finalValue">1</real>
+                    <real id="duration">0.5</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id189864" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">scene.layers.id156294.actors.id257600.attributes.color.alpha</text>
+                    <real id="finalValue">1</real>
+                    <real id="duration">0.5</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id358776" class="TimerBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">1.75</real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior id="id186869" class="ChangeSceneAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Scene</text>
+                        <text id="bundleName">ChangeScene.behavior</text>
+                        <text id="sceneKey">id754959</text>
+                        <boolean id="enableAdvertisement">false</boolean>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id376918" prototype="id360054">
+          <attributes>
+            <point id="position">
+              <real id="x">173</real>
+              <real id="y">68</real>
+            </point>
+            <size id="size">
+              <real id="width">23</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id334632" prototype="id360054">
+          <attributes>
+            <point id="position">
+              <real id="x">201</real>
+              <real id="y">69</real>
+            </point>
+            <size id="size">
+              <real id="width">23</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id818366" prototype="id360054">
+          <attributes>
+            <point id="position">
+              <real id="x">229</real>
+              <real id="y">68</real>
+            </point>
+            <size id="size">
+              <real id="width">23</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id366597" prototype="id213002">
+          <attributes>
+            <point id="position">
+              <real id="x">203</real>
+              <real id="y">70</real>
+            </point>
+            <size id="size">
+              <real id="width">23</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Easter Egg 004</image>
+          </attributes>
+          <behaviors>
+            <behavior id="id117207" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id575670" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id791511" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id404121</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;=</text>
+                      <real id="RHS">14</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id731900" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.id303177</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.time" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id290649" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id649418" eventType="mouse position" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.time</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">
+                            <expression>
+                              <reference keypath="self.attributes.id303177" />
+                              <string xml:space="preserve">+1</string>
+                            </expression>
+                          </real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id846051" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">self.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">1</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id139355" prototype="id213002">
+          <attributes>
+            <point id="position">
+              <real id="x">174</real>
+              <real id="y">69</real>
+            </point>
+            <size id="size">
+              <real id="width">23</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id890895" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.color.alpha</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id768994" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id390868" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id404121</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;=</text>
+                      <real id="RHS">1</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id123561" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.id303177</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.time" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id621605" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id570965" eventType="mouse position" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.time</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">
+                            <expression>
+                              <reference keypath="self.attributes.id303177" />
+                              <string xml:space="preserve">+1</string>
+                            </expression>
+                          </real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id273154" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">self.attributes.color.alpha</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">1</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id488382">
+      <actors>
+        <actor id="id617044" prototype="id258085">
+          <attributes>
+            <point id="position">
+              <real id="x">165</real>
+              <real id="y">236.5</real>
+            </point>
+            <size id="size">
+              <real id="width">337</real>
+              <real id="height">493</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id748730" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id673991" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.time</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id832077" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <real id="finalValue">0</real>
+                    <real id="duration">1</real>
+                    <index id="easing">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id389164" prototype="id298591">
+          <attributes>
+            <point id="position">
+              <real id="x">156</real>
+              <real id="y">349</real>
+            </point>
+            <size id="size">
+              <real id="width">166</real>
+              <real id="height">70</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">loading</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">transition screen</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Complete Scene</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">600</real>
+      <real id="height">1024</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">320</real>
+        <real id="height">480</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">320</real>
+        <real id="height">260</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">false</boolean>
+      <boolean id="portrait">true</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>

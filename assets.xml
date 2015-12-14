@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.23" GSCVersion="0.13.33">
+  <sounds>
+    <music name="GETTINGCOLD">
+      <file name="GETTINGCOLD.m4a" size="4733422" />
+    </music>
+    <music name="FrozenWasteland">
+      <file name="FrozenWasteland.m4a" size="2678775" />
+    </music>
+    <sound name="hmm">
+      <file name="hmm.ogg" size="10815" />
+    </sound>
+    <sound name="snowfootstep">
+      <file name="snowfootstep.ogg" size="10349" />
+    </sound>
+    <sound name="logoswoosh">
+      <file name="logoswoosh.ogg" size="9690" />
+    </sound>
+    <sound name="logochime">
+      <file name="logochime.ogg" size="20882" />
+    </sound>
+    <sound name="yetilostgrunt">
+      <file name="yetilostgrunt.ogg" size="30144" />
+    </sound>
+    <sound name="coldstormywind">
+      <file name="coldstormywind.ogg" size="2444885" />
+    </sound>
+    <sound name="funny_bite">
+      <file name="funny_bite.ogg" size="9787" />
+    </sound>
+    <sound name="woosh_3">
+      <file name="woosh_3.ogg" size="12580" />
+    </sound>
+    <sound name="woosh_1">
+      <file name="woosh_1.ogg" size="9739" />
+    </sound>
+    <sound name="Spit_BLASTWAVEFX_13045">
+      <file name="Spit_BLASTWAVEFX_13045.ogg" size="12004" />
+    </sound>
+    <sound name="HUMAN_VOICE_LONG_AWHH_01">
+      <file name="HUMAN_VOICE_LONG_AWHH_01.ogg" size="16734" />
+    </sound>
+    <sound name="HUMAN_VOICE_CLIP_CARTOON_MALE_YIPPIE_01">
+      <file name="HUMAN_VOICE_CLIP_CARTOON_MALE_YIPPIE_01.ogg" size="16282" />
+    </sound>
+  </sounds>
+  <images>
+    <image name="ss_snow">
+      <file name="ss_snow.png" size="1989" />
+    </image>
+    <image name="ss_snowMist">
+      <file name="ss_snowMist.png" size="14937" />
+    </image>
+    <image name="scene1">
+      <file name="scene1.png" size="721321" />
+    </image>
+    <image name="mountain_4">
+      <file name="mountain_4.png" size="209329" />
+    </image>
+    <image name="ground-1">
+      <file name="ground-1.png" size="9211" />
+    </image>
+    <image name="ice-ledge-5">
+      <file name="ice-ledge-5.png" size="54698" />
+    </image>
+    <image name="tree_7">
+      <file name="tree_7.png" size="58392" />
+    </image>
+    <image name="mountain_5">
+      <file name="mountain_5.png" size="91862" />
+    </image>
+    <image name="cave-3">
+      <file name="cave-3.png" size="19667" />
+    </image>
+    <image name="snow_ledge_2">
+      <file name="snow_ledge_2.png" size="19600" />
+    </image>
+    <image name="snow_ledge_7">
+      <file name="snow_ledge_7.png" size="28432" />
+    </image>
+    <image name="snow_ledge_6">
+      <file name="snow_ledge_6.png" size="40145" />
+    </image>
+    <image name="snow_ledge_5">
+      <file name="snow_ledge_5.png" size="56662" />
+    </image>
+    <image name="snow_ledge_4">
+      <file name="snow_ledge_4.png" size="53971" />
+    </image>
+    <image name="snow_ledge_3">
+      <file name="snow_ledge_3.png" size="19170" />
+    </image>
+    <image name="snow_ledge_1">
+      <file name="snow_ledge_1.png" size="33785" />
+    </image>
+    <image name="rock-ledge-1">
+      <file name="rock-ledge-1.png" size="5881" />
+    </image>
+    <image name="rock-ledge-1-copy">
+      <file name="rock-ledge-1-copy.png" size="5950" />
+    </image>
+    <image name="rock-ledge-2">
+      <file name="rock-ledge-2.png" size="5382" />
+    </image>
+    <image name="rock-ledge-2-copy">
+      <file name="rock-ledge-2-copy.png" size="5767" />
+    </image>
+    <image name="rock-ledge-3">
+      <file name="rock-ledge-3.png" size="5563" />
+    </image>
+    <image name="rock-ledge-3-copy">
+      <file name="rock-ledge-3-copy.png" size="5736" />
+    </image>
+    <image name="rock-ledge-4-copy">
+      <file name="rock-ledge-4-copy.png" size="5396" />
+    </image>
+    <image name="rock-ledge-5">
+      <file name="rock-ledge-5.png" size="7183" />
+    </image>
+    <image name="rock-ledge-5-copy">
+      <file name="rock-ledge-5-copy.png" size="7299" />
+    </image>
+    <image name="ice-ledge-1">
+      <file name="ice-ledge-1.png" size="37994" />
+    </image>
+    <image name="ice-ledge-2">
+      <file name="ice-ledge-2.png" size="40284" />
+    </image>
+    <image name="ice-ledge-3">
+      <file name="ice-ledge-3.png" size="39107" />
+    </image>
+    <image name="ice-ledge-4">
+      <file name="ice-ledge-4.png" size="45475" />
+    </image>
+    <image name="hmm bubble">
+      <file name="hmm bubble.png" size="40284" />
+    </image>
+    <image name="snowball">
+      <file name="snowball.png" size="3531" />
+    </image>
+    <image name="play">
+      <file name="play.png" size="8955" />
+    </image>
+    <image name="play_pressed">
+      <file name="play_pressed.png" size="9744" />
+    </image>
+    <image name="pause">
+      <file name="pause.png" size="8234" />
+    </image>
+    <image name="pause_pressed">
+      <file name="pause_pressed.png" size="9226" />
+    </image>
+    <image name="restart button">
+      <file name="restart button.png" size="11362" />
+    </image>
+    <image name="yeti_eat_001">
+      <file name="yeti_eat_001.png" size="16164" />
+    </image>
+    <image name="yeti_eat_002">
+      <file name="yeti_eat_002.png" size="16210" />
+    </image>
+    <image name="yeti_eat_003">
+      <file name="yeti_eat_003.png" size="16670" />
+    </image>
+    <image name="yeti_eat_004">
+      <file name="yeti_eat_004.png" size="15579" />
+    </image>
+    <image name="yeti_standing_001">
+      <file name="yeti_standing_001.png" size="16239" />
+    </image>
+    <image name="yeti_standing_002">
+      <file name="yeti_standing_002.png" size="16539" />
+    </image>
+    <image name="yeti_standing_003">
+      <file name="yeti_standing_003.png" size="16532" />
+    </image>
+    <image name="yeti_standing_004">
+      <file name="yeti_standing_004.png" size="16659" />
+    </image>
+    <image name="Himal_throwing 3">
+      <file name="Himal_throwing 3.png" size="28685" />
+    </image>
+    <image name="Himal_throwing 2">
+      <file name="Himal_throwing 2.png" size="29951" />
+    </image>
+    <image name="Himal_standing 1">
+      <file name="Himal_standing 1.png" size="28992" />
+    </image>
+    <image name="Himal_standing 2">
+      <file name="Himal_standing 2.png" size="28986" />
+    </image>
+    <image name="Himal_standing 3">
+      <file name="Himal_standing 3.png" size="28991" />
+    </image>
+    <image name="Himal_throwing 1">
+      <file name="Himal_throwing 1.png" size="29767" />
+    </image>
+    <image name="Himal_throwing 4">
+      <file name="Himal_throwing 4.png" size="31016" />
+    </image>
+    <image name="Himal_throwing 5">
+      <file name="Himal_throwing 5.png" size="34518" />
+    </image>
+    <image name="Himal_throwing 6">
+      <file name="Himal_throwing 6.png" size="34450" />
+    </image>
+    <image name="Himal_standing 4">
+      <file name="Himal_standing 4.png" size="28744" />
+    </image>
+    <image name="Himal_standing 5">
+      <file name="Himal_standing 5.png" size="28924" />
+    </image>
+    <image name="thumb">
+      <file name="thumb.png" size="7911" />
+    </image>
+    <image name="Easter Egg 001">
+      <file name="Easter Egg 001.png" size="5054" />
+    </image>
+    <image name="Easter Egg 002">
+      <file name="Easter Egg 002.png" size="5152" />
+    </image>
+    <image name="Easter Egg 003">
+      <file name="Easter Egg 003.png" size="5072" />
+    </image>
+    <image name="Easter Egg 004">
+      <file name="Easter Egg 004.png" size="5105" />
+    </image>
+    <image name="Easter Egg 005">
+      <file name="Easter Egg 005.png" size="5015" />
+    </image>
+    <image name="Easter Egg 006">
+      <file name="Easter Egg 006.png" size="5142" />
+    </image>
+    <image name="Easter Egg 007">
+      <file name="Easter Egg 007.png" size="5145" />
+    </image>
+    <image name="Easter Egg 008">
+      <file name="Easter Egg 008.png" size="5109" />
+    </image>
+    <image name="Easter Egg 009">
+      <file name="Easter Egg 009.png" size="4991" />
+    </image>
+    <image name="Easter Egg 010">
+      <file name="Easter Egg 010.png" size="5102" />
+    </image>
+    <image name="Easter Egg 011">
+      <file name="Easter Egg 011.png" size="4952" />
+    </image>
+    <image name="Easter Egg 012">
+      <file name="Easter Egg 012.png" size="5089" />
+    </image>
+    <image name="Easter Egg blank">
+      <file name="Easter Egg blank.png" size="3246" />
+    </image>
+    <image name="snowballProgressBar">
+      <file name="snowballProgressBar.png" size="6031" />
+    </image>
+    <image name="1">
+      <file name="1.png" size="3671" />
+    </image>
+    <image name="level">
+      <file name="level.png" size="5476" />
+    </image>
+    <image name="level complete">
+      <file name="level complete.png" size="79280" />
+    </image>
+    <image name="eggGlow">
+      <file name="eggGlow.png" size="7719" />
+    </image>
+    <image name="title screen">
+      <file name="title screen.png" size="189087" />
+    </image>
+    <image name="rock-ledge-4">
+      <file name="rock-ledge-4.png" size="9418" />
+    </image>
+    <image name="sound_off_button">
+      <file name="sound_off_button.png" size="10212" />
+    </image>
+    <image name="sound_on_button">
+      <file name="sound_on_button.png" size="10970" />
+    </image>
+    <image name="static_logo">
+      <file name="static_logo.png" size="37901" />
+    </image>
+    <image name="10">
+      <file name="10.png" size="4434" />
+    </image>
+    <image name="9">
+      <file name="9.png" size="4025" />
+    </image>
+    <image name="8">
+      <file name="8.png" size="4029" />
+    </image>
+    <image name="7">
+      <file name="7.png" size="3681" />
+    </image>
+    <image name="6">
+      <file name="6.png" size="4050" />
+    </image>
+    <image name="5">
+      <file name="5.png" size="3971" />
+    </image>
+    <image name="4">
+      <file name="4.png" size="4125" />
+    </image>
+    <image name="3">
+      <file name="3.png" size="4037" />
+    </image>
+    <image name="2">
+      <file name="2.png" size="4112" />
+    </image>
+    <image name="yellowpuddle">
+      <file name="yellowpuddle.png" size="4821" />
+    </image>
+    <image name="Himal_happy3">
+      <file name="Himal_happy3.png" size="30926" />
+    </image>
+    <image name="Himal_happy5">
+      <file name="Himal_happy5.png" size="37538" />
+    </image>
+    <image name="Himal_happy4">
+      <file name="Himal_happy4.png" size="34677" />
+    </image>
+    <image name="Himal_happy2">
+      <file name="Himal_happy2.png" size="32076" />
+    </image>
+    <image name="Himal_happy1">
+      <file name="Himal_happy1.png" size="36327" />
+    </image>
+    <image name="Himal_sad5">
+      <file name="Himal_sad5.png" size="40524" />
+    </image>
+    <image name="Himal_sad4">
+      <file name="Himal_sad4.png" size="38990" />
+    </image>
+    <image name="Himal_sad3">
+      <file name="Himal_sad3.png" size="36355" />
+    </image>
+    <image name="Himal_sad2">
+      <file name="Himal_sad2.png" size="32098" />
+    </image>
+    <image name="Himal_sad1">
+      <file name="Himal_sad1.png" size="29962" />
+    </image>
+    <image name="yeti_happy_002">
+      <file name="yeti_happy_002.png" size="15286" />
+    </image>
+    <image name="yeti_happy_001">
+      <file name="yeti_happy_001.png" size="14375" />
+    </image>
+    <image name="yeti_spit_sad">
+      <file name="yeti_spit_sad.png" size="14907" />
+    </image>
+    <image name="yeti_spit_petoo">
+      <file name="yeti_spit_petoo.png" size="15906" />
+    </image>
+    <image name="yeti_spit_left">
+      <file name="yeti_spit_left.png" size="16903" />
+    </image>
+    <image name="Yeti_spit_right">
+      <file name="Yeti_spit_right.png" size="17222" />
+    </image>
+    <image name="yeti_happy_005">
+      <file name="yeti_happy_005.png" size="14041" />
+    </image>
+    <image name="yeti_happy_004">
+      <file name="yeti_happy_004.png" size="14088" />
+    </image>
+    <image name="yeti_happy_003">
+      <file name="yeti_happy_003.png" size="14321" />
+    </image>
+    <image name="roundSurface">
+      <file name="roundSurface.png" size="1552" />
+    </image>
+    <image name="level failed">
+      <file name="level failed.png" size="82539" />
+    </image>
+    <image name="loading">
+      <file name="loading.png" size="33571" />
+    </image>
+    <image name="home button">
+      <file name="home button.png" size="9356" />
+    </image>
+    <image name="tutorialBubble">
+      <file name="tutorialBubble.png" size="5481" />
+    </image>
+    <image name="tutorialText1">
+      <file name="tutorialText1.png" size="10063" />
+    </image>
+    <image name="tutorialText3">
+      <file name="tutorialText3.png" size="26113" />
+    </image>
+    <image name="tutorialText2">
+      <file name="tutorialText2.png" size="36397" />
+    </image>
+    <image name="tutorialText4">
+      <file name="tutorialText4.png" size="8920" />
+    </image>
+    <image name="ground-6">
+      <file name="ground-6.png" size="17977" />
+    </image>
+    <image name="cloud_filter">
+      <file name="cloud_filter.png" size="8596" />
+    </image>
+    <image name="cloud_filter_full_of_pee">
+      <file name="cloud_filter_full_of_pee.png" size="13413" />
+    </image>
+    <image name="pee_01">
+      <file name="pee_01.png" size="2380" />
+    </image>
+    <image name="pee_02">
+      <file name="pee_02.png" size="3789" />
+    </image>
+    <image name="pee_03">
+      <file name="pee_03.png" size="2563" />
+    </image>
+    <image name="pee_04">
+      <file name="pee_04.png" size="2476" />
+    </image>
+    <image name="ground-2">
+      <file name="ground-2.png" size="7184" />
+    </image>
+    <image name="trampoline">
+      <file name="trampoline.png" size="29056" />
+    </image>
+    <image name="ground-4">
+      <file name="ground-4.png" size="8830" />
+    </image>
+    <image name="mountain_7">
+      <file name="mountain_7.png" size="135941" />
+    </image>
+    <image name="cavefront">
+      <file name="cavefront.png" size="102861" />
+    </image>
+    <image name="level select scene">
+      <file name="level select scene.png" size="152652" />
+    </image>
+    <image name="locked">
+      <file name="locked.png" size="3095" />
+    </image>
+    <image name="story background">
+      <file name="story background.png" size="139035" />
+    </image>
+    <image name="story graphic">
+      <file name="story graphic.png" size="317480" />
+    </image>
+    <image name="credits screen">
+      <file name="credits screen.png" size="99668" />
+    </image>
+    <image name="congrats">
+      <file name="congrats.png" size="35313" />
+    </image>
+    <image name="AllRightsReserved">
+      <file name="AllRightsReserved.png" size="5844" />
+    </image>
+  </images>
+  <behaviors />
+</assets>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id669445" PGFVersion="0.23" GSCVersion="0.13.33">
+  <attributes>
+    <text id="name">Scene Specific Settings</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">120</real>
+      <real id="height">120</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image" />
+    <text id="tags" />
+    <boolean id="preloadArt">false</boolean>
+    <integer id="id634865" name="maxSnowballs">25</integer>
+    <integer id="id990246" name="numSnowballs">0</integer>
+    <real id="id226671" name="throwRate">2.5</real>
+    <integer id="id818284" name="sceneEggsCollected">0</integer>
+    <integer id="id958264" name="snowballsToWin">3</integer>
+    <integer id="id407179" name="snowballsEaten">0</integer>
+    <integer id="id689337" name="sceneSpawnDirY">10</integer>
+    <integer id="id779514" name="sceneSpawnDirX">100</integer>
+    <integer id="id591596" name="sceneSnowballAcceleration">40</integer>
+  </attributes>
+  <behaviors>
+    <behavior id="id960435" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id928275" eventType="mouse position" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.time</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id704644" class="CompoundBehavior" enabled="true">
+          <attributes>
+            <text id="name">Group</text>
+            <text id="bundleName">Group.behavior</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id210403" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id720620</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id927187" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id341745</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id958264" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id173459" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id581749</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id407179" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id567979" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id525983</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id818284" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id723782" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id346623</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id226671" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id669645" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id409319</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id990246" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id512825" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id674737</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id634865" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id727148" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id953742</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id767038" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id151927</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id338674" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id676704</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id925118" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id161002</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id363186" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id203022</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id171661" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id930071</text>
+                <text id="RHS">1</text>
+              </attributes>
+            </behavior>
+            <behavior id="id359072" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id557707</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id496414" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id305222</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id699249" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id950516" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id644112</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id779514" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id967625" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id369688</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id689337" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id541200" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id906833</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.id591596" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">false</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

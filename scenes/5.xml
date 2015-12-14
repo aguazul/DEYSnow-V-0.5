@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.23" GSCVersion="0.13.33" id="id160162">
+  <layers>
+    <layer id="id161752">
+      <actors>
+        <actor id="id925094" prototype="id272998">
+          <attributes>
+            <point id="position">
+              <real id="x">341</real>
+              <real id="y">461</real>
+            </point>
+            <size id="size">
+              <real id="width">32</real>
+              <real id="height">32</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id285130" prototype="id541940">
+          <attributes>
+            <point id="position">
+              <real id="x">160.5</real>
+              <real id="y">241</real>
+            </point>
+            <size id="size">
+              <real id="width">320</real>
+              <real id="height">480</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">background</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id312674" prototype="id842027">
+          <attributes>
+            <point id="position">
+              <real id="x">162</real>
+              <real id="y">240</real>
+            </point>
+            <size id="size">
+              <real id="width">320</real>
+              <real id="height">480</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">story</text>
+            <image id="image">credits screen</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id544490" prototype="id101349">
+          <attributes>
+            <point id="position">
+              <real id="x">-36</real>
+              <real id="y">343</real>
+            </point>
+            <size id="size">
+              <real id="width">128</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">ss_PARTICLES_Snow Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id628457" prototype="id101349">
+          <attributes>
+            <point id="position">
+              <real id="x">16.5</real>
+              <real id="y">512.5</real>
+            </point>
+            <size id="size">
+              <real id="width">128</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id945306" prototype="id835873">
+          <attributes>
+            <point id="position">
+              <real id="x">306</real>
+              <real id="y">462.5</real>
+            </point>
+            <size id="size">
+              <real id="width">35</real>
+              <real id="height">35</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">home button</image>
+            <text id="name">home button</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id318656" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id258670" eventType="touch" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="touch" conditionType="released">
+                    <attributes />
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id618294" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">scene.layers.id422809.actors.id557269.attributes.color.alpha</text>
+                    <real id="finalValue">1</real>
+                    <real id="duration">0.5</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id624320" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">scene.layers.id422809.actors.id813906.attributes.color.alpha</text>
+                    <real id="finalValue">1</real>
+                    <real id="duration">0.5</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id470033" class="TimerBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">1.75</real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior id="id314831" class="ChangeSceneAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Scene</text>
+                        <text id="bundleName">ChangeScene.behavior</text>
+                        <text id="sceneKey">id754959</text>
+                        <boolean id="enableAdvertisement">false</boolean>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id422809">
+      <actors>
+        <actor id="id813906" prototype="id258085">
+          <attributes>
+            <point id="position">
+              <real id="x">165</real>
+              <real id="y">236.5</real>
+            </point>
+            <size id="size">
+              <real id="width">337</real>
+              <real id="height">493</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image" />
+          </attributes>
+          <behaviors>
+            <behavior id="id612816" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id693717" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.time</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id477618" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.color.alpha</text>
+                    <real id="finalValue">0</real>
+                    <real id="duration">1</real>
+                    <index id="easing">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+        <actor id="id557269" prototype="id298591">
+          <attributes>
+            <point id="position">
+              <real id="x">156</real>
+              <real id="y">349</real>
+            </point>
+            <size id="size">
+              <real id="width">166</real>
+              <real id="height">70</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">loading</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">transition screen</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Credits Scene</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">600</real>
+      <real id="height">1024</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">320</real>
+        <real id="height">480</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">320</real>
+        <real id="height">260</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">false</boolean>
+      <boolean id="portrait">true</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>
